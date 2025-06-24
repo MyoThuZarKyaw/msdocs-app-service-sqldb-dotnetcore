@@ -63,12 +63,4 @@ jobs:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_8584ECBBFA064EBE8BD54B75E2E5ED06 }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_020F743FB40045FBBBD641D9995A9F92 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_5B701137D64843539A39B7392376E026 }}
-
-      - name: Deploy to Azure Web App
-        id: deploy-to-webapp
-        uses: azure/webapps-deploy@v3
-        with:
-          app-name: 'myowebsite'
-          slot-name: 'Production'
-          package: .
           
